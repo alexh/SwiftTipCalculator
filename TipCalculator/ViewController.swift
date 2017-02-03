@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBOutlet weak var billAmountField: UITextField!
     @IBOutlet weak var tipSelector: UISegmentedControl!
     @IBOutlet weak var tipAmountField: UITextField!
